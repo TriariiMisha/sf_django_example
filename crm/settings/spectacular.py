@@ -1,0 +1,4 @@
+SPECTACULAR_SETTINGS = {
+    'SERVE_PUBLIC': True,
+    'SERVE_INCLUDE_SCHEMA': False,
+}
