@@ -10,6 +10,5 @@ INSTALLED_APPS = [
     'drf_spectacular_sidecar',
     'rest_framework',
     'crm.core',
-    # 'crm.internal.products',
-    # 'crm.internal.queues',
+    'crm.internal.products',
 ]

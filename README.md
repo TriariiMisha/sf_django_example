@@ -4,15 +4,10 @@ Django example for SF
 Перед началом работа обязательно почитайте официальный [туториал](https://docs.djangoproject.com/en/5.2/intro/tutorial01/). Правда, там акцент на полноценное приложение, включая фронтенд.
 
 ## Бизнес логика проекта
-- сущности: продукт, очередь;
+- сущности: продукт;
 - действия с продуктом:
   - создание;
   - обновление;
-  - получение информации;
-  - удаление;
-- действия с очередью:
-  - создание (с подвязкой к продукту / без него);
-  - обновление (с возможностью подвязки к продукту);
   - получение информации;
   - удаление.
 
@@ -43,4 +38,11 @@ docker-compose -f docker-compose.yml up -d postgres
 from django.core.management.utils import get_random_secret_key
 
 print(get_random_secret_key())
+```
+
+##### Запуск линтеров
+```shell
+$ isort ./
+$ flake8 ./
+$ black --skip-string-normalization ./
 ```

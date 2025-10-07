@@ -6,6 +6,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+# if local
 dotenv_path = Path('local/environment.env')
 load_dotenv(dotenv_path=dotenv_path)
 

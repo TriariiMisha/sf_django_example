@@ -1,8 +1,7 @@
 from django.urls import path
 
-from crm.core.views import alive, MyselfView
+from crm.core.views import alive
 
 urlpatterns = [
-    path('alive/', alive, name='alive'),
-    path('myself/', MyselfView.as_view()),
+    path('alive', alive, name='alive'),
 ]
