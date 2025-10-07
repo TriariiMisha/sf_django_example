@@ -1,0 +1,5 @@
+[flake8]
+exclude = .gitignore,deps,\docker-local-data,old,build,dist,*.yml,*.md,venv,.idea
+max-line-length=119
+inline-quotes = single
+avoid-escape = False
